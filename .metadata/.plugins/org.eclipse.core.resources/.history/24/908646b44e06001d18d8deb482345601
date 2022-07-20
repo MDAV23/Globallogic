@@ -1,0 +1,34 @@
+package com.globallogic.helloworld;
+abstract class ChinaMobile {
+	public void calling() {
+		System.out.println("calling ");
+	}
+
+	public void sendsms() {
+		System.out.println("send sms");
+
+	}
+
+	abstract void brand();
+}
+//class will be always extends
+class Mircomax extends ChinaMobile {
+
+	@Override
+	void brand() {
+		// TODO Auto-generated method stub
+		System.out.println("
+}
+
+}
+
+public class Abstractclass {
+public static void main(String[] args) {
+	Mircomax mircomax=new Mircomax();
+	mircomax.brand();
+	mircomax.calling();
+	mircomax.sendsms();
+	
+}
+}
+

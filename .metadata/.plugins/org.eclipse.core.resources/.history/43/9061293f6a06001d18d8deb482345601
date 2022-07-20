@@ -1,0 +1,17 @@
+package com.globallogic.helloworld;
+
+import java.util.Scanner;
+
+public class Reverse {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String st=sc.nextLine();
+		String s="";
+		for(int i=0;i<st.length();i++) {
+			s=st.charAt(i)+s;
+		}
+		System.out.println(s);
+		System.out.println(Integer.toBinaryString(65));
+	}
+
+}

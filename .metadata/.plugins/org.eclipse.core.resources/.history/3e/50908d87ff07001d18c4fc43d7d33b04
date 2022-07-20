@@ -1,0 +1,32 @@
+package com.globallogic.July20;
+
+public class Palindromesub {
+	public static void main(String[] args) {
+		String str =new String("bob has a radar plane");
+		str+=" ";
+		String s="";
+		for(String val:str.split(" ")) {
+			StringBuffer br=new StringBuffer(val);
+			br.reverse();
+			if(val.length()==1) {
+				System.out.print(val+" ");
+			}
+			else if(val.equals(br.toString()))
+			{
+				int l=val.length();
+				while(l>0) {
+					s+="*";			
+					l--;
+				}
+				br.replace(0,val.length(),s);
+				System.out.print(br.toString()+" ");
+			}
+			else
+			{
+				System.out.print(val+" ");
+			}
+			
+		}
+	}
+
+}

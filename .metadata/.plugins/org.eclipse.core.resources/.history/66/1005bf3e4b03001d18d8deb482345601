@@ -1,0 +1,16 @@
+package com.globallogic.helloworld;
+
+import java.util.Scanner;
+
+public class Reverse {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String st=sc.nextLine();
+		String s="";
+		for(int i=st.length();i>=0;i--) {
+			s+=st.charAt(i);
+		}
+		System.out.println(s);
+	}
+
+}

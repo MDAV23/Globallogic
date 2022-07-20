@@ -1,0 +1,19 @@
+package com.globallogic.july19;
+import java.lang.String;
+
+public class MyString {
+	public static void main(String[] args) {
+		String str=new String("www.google.com/wikipedia");
+		char ch;
+		String st="";
+		for(int i=0;i<str.length();i++) {
+			ch=str.charAt(i);
+			if(ch=='.'||ch==','||ch==' '||ch=='	') {
+				StringBuffer br=new StringBuffer(st);
+				System.out.println(br.reverse()+ch);
+				
+			}
+		}
+	}
+
+}
